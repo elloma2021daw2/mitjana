@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-	float suma=0.0;
-	float mitja=0.0;
+	float suma=0;
+	float mitja;
 	float nou_valor=0.0;
 	int numero_repeticions=0;
 	char consulta='y';
@@ -13,7 +13,7 @@ int main() {
 		suma=suma+nou_valor;
 		numero_repeticions=numero_repeticions+1;
 		printf("Vols continuar (y/n): ");
-		scanf(" %s",&consulta); 
+		scanf(" %s",&consulta);
 	}
 	mitja=suma/numero_repeticions;
 	printf("La mitjana resultant és: %.2f\n",mitja);
